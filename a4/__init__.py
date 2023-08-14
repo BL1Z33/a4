@@ -3,6 +3,7 @@ import sys
 import platform
 import ctypes
 import subprocess
+import random
 from PIL import ImageGrab
 
 def pause():
