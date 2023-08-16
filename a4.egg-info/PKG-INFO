@@ -1,9 +1,11 @@
 Metadata-Version: 2.1
 Name: a4
-Version: 0.4
+Version: 0.5
 Summary: A Python package for terminal utilities and screenshot capturing.
 Author: BL1Z33
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: Microsoft :: Windows
 License-File: LICENSE
+
+A4 is a Python package for terminal utilities and screenshot capturing, and more. Made by BL1Z33 with help from ChatGPT, A4 strives to be the best Python package that currently exists on the internet. Download the source code at https://github.com/BL1Z33/a4 and visit the creator's website at https://bl1z33.github.io

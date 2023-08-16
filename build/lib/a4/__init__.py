@@ -37,3 +37,30 @@ def source_code():
 
 def package():
     return "https://pypi.org/project/a4"
+
+def create_package():
+    import os
+    import subprocess
+
+    package = input("Package name: ")
+
+    if not os.path.exists(package):
+        github_user = input("GitHub username: ")
+        github_repo = input("GitHub repository: ")
+        subprocess.run(["git", "clone", f"https://github.com/{github_user}/{github_repo}.git"])
+
+    os.chdir(package)
+
+    print(f"Update your code NOW. Pressing Enter will add the old version of {package} to Git.")
+    input("Press Enter when code is updated.")
+    subprocess.run(["git", "add", "*"])
+
+    commit = input("Commit info: ")
+    subprocess.run(["git", "commit", "-m", commit])
+    subprocess.run(["git", "push", "origin", "main"])
+
+    subprocess.run(["python", "setup.py", "sdist", "bdist_wheel"])
+    subprocess.run(["twine", "upload", "dist/*"])
+
+    print(f"Updated {package}.")
+    print(f"Package: https://pypi.org/project/{package}")
