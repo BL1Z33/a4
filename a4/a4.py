@@ -28,3 +28,12 @@ def send_file(file_name, new_location):
         print(f"Error: File '{file_name}' not found.")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+def get_operating_system():
+    return platform.system()
+
+def source_code():
+    return "https://github.com/BL1Z33/a4"
+
+def package():
+    return "https://pypi.org/project/a4"

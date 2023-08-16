@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='a4',
-    version='0.3',
+    version='0.4',
     description='A Python package for terminal utilities and screenshot capturing.',
     author='BL1Z33',
     packages=['a4'],
