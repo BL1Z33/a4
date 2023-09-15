@@ -1,8 +1,3 @@
 # a4
-Source code for the A4 plugin.
-
-# Download
-Download it at [PyPI](https://pypi.org/project/a4/) or type this command in your terminal:
-```
-pip install a4
-```
+a4 has been discontinued.
+You can look for my other Python projects on [my website](bl1z33.github.io).
